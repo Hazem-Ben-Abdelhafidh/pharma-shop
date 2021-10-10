@@ -1,0 +1,18 @@
+.Footer {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    h3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 400;
+    }
+
+   
+}

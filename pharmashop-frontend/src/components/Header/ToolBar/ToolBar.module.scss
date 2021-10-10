@@ -1,0 +1,47 @@
+.NavigationBar{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    background-color: black;
+    position: relative;
+
+    .Burger{
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+        display:none;
+        z-index: 50;
+    }
+     h5 {
+         color:white;
+     }
+     .Cart {
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+     }
+
+
+    }
+    header {
+        position:relative;
+    }
+
+
+
+    @media only screen and (max-width: 600px) {
+        .NavigationBar  {
+            
+            .Burger{
+                display: block;
+            }
+            ul {
+                display: none;
+            }
+        }
+       
+      }   
+
+    

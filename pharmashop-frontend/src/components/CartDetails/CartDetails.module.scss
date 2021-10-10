@@ -1,0 +1,8 @@
+.Cart {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,240px);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}

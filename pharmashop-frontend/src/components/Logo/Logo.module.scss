@@ -1,0 +1,28 @@
+.Logo {
+    transition: transform .2s ease-in;
+    animation: logo-animation 3s;
+    a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Merienda One', cursive;
+        font-size: 30px;
+        @media only screen and (max-width: 600px){
+            font-size: 25px;
+        }
+        
+    }
+    &:hover {
+        transform:scale(1.1);
+    }
+
+    @keyframes logo-animation {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+        
+    }
+  
+}

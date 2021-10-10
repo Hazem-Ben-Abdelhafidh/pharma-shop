@@ -1,0 +1,74 @@
+.register {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    border:none;
+    background-color: #007FFF;
+    font-weight: bold;
+    transition: all .3s ease-in;
+    position: relative;
+    z-index: 7;
+    margin-right: 7px;
+    padding: 6px 14px;
+    width: 100px;
+    height:40px;
+    cursor: pointer;
+    animation: logo-animation 3s;
+
+    a {
+        color : white;
+        text-decoration: none;
+        transition: color .25s ease-in;
+        text-transform: uppercase;
+        font-size: 13px;
+        
+    }
+    &::after,&::before{
+        position:absolute;
+        height:100%;
+        width: 50%;
+        background-color: white;
+        transform: scaleX(0);
+        transition: all .4s ease-in;
+        content:"";
+        z-index: -1;
+        
+    }
+    &::after{
+        top:0;
+        left:0;
+        transform-origin: left;
+      
+        
+    }
+    &::before {
+        top:0;
+        right:0;
+        transform-origin: right;
+       
+    }
+    &:hover::after,&:hover::before{
+        transform: scaleX(1);
+        
+    }
+    &:hover a {
+        
+            color: #007FFF;
+        
+    }
+    @keyframes logo-animation {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+        
+    }
+
+}
+
+
+
+
+
+

@@ -1,0 +1,69 @@
+.NavLinks {
+    
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        animation: header-animation 2s;
+        
+        li {
+            padding: 5px;
+            margin:2px;
+            a{
+                font-family: 'Poppins', sans-serif;
+                text-decoration: none;
+                color: white;
+                font-size: 13px;
+                font-weight:600;
+                transition: color .1s ease-out;
+                text-transform: uppercase;
+                cursor: pointer;
+                &:hover {
+                    color: dodgerblue;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width:600px) {
+        ul{
+            flex-direction: column;
+            width: 100%;
+
+            li{
+                width: 100%;
+                transition: background-color .3s ease-in;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 10px;
+                
+                &:hover {
+                    background-color: dodgerblue;
+                }
+                a {
+                    font-size: 16px;
+                    &:hover{
+                        color: white;
+                    }
+                }
+            }
+        }
+        
+        
+      
+   
+    }
+   
+  }
+  @keyframes header-animation {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+   }
